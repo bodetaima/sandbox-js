@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Home</title>
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/fomantic-ui@2.8.5/dist/semantic.min.css"
+    />
+    <link rel="stylesheet" type="text/css" href="/css/index.css" />
+  </head>
+  <body>
+    <div class="ui container">
+      <h1 class="ui header">Welcome to Javascript Sandbox</h1>
+      <p>A Javascript Sandbox made by and for Phong!</p>
+      <div>
+        <table class="ui very basic collapsing celled table">
+          <thead>
+            <tr>
+              <th>Name</th>
+              <th>Email</th>
+              <th></th>
+            </tr>
+          </thead>
+          <tbody id="dataTable"></tbody>
+        </table>
+        <div class="ui input">
+          <input type="text" placeholder="Username" id="name" />
+        </div>
+        <div class="ui input">
+          <input type="text" placeholder="Email" id="email" />
+        </div>
+        <button class="ui primary button" onclick="addNewUser()">
+          Add New User
+        </button>
+      </div>
+    </div>
+  </body>
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.3.1/dist/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/fomantic-ui@2.8.5/dist/semantic.min.js"></script>
+  <script src="/js/index.js"></script>
+</html>

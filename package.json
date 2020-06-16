@@ -1,0 +1,19 @@
+{
+  "name": "practice",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "live": "nodemon server.js"
+  },
+  "author": "Phong Tran",
+  "license": "ISC",
+  "devDependencies": {
+    "express": "^4.17.1",
+    "nodemon": "^2.0.4"
+  },
+  "dependencies": {
+    "fomantic-ui": "^2.8.5"
+  }
+}
