@@ -34,8 +34,30 @@
           Add New User
         </button>
       </div>
+      <div id="app">
+        <table class="ui very basic collapsing celled table">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Email</th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr v-for="(user, index) in users" :key="index">
+                    <td>{{ user.name }}</td>
+                    <td>{{ user.email }}</td>
+                    <td><button @click="deleteUser(index)">Delete</button></td>
+                </tr>
+            </tbody>
+        </table>
+        <input type="text" placeholder="Username" v-model="name"/>
+        <input type="text" placeholder="Email" v-model="email"/>
+        <button @click="addNewUser">Add new User</button>
+      </div>
     </div>
   </body>
+  <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/jquery@3.3.1/dist/jquery.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/fomantic-ui@2.8.5/dist/semantic.min.js"></script>
   <script src="/js/index.js"></script>
