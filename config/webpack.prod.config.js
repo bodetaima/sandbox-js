@@ -6,6 +6,7 @@ const OptimizeCSSAssetsPlugin = require("optimize-css-assets-webpack-plugin");
 const TerserPlugin = require("terser-webpack-plugin");
 const MiniCSSExtractPlugin = require("mini-css-extract-plugin");
 const CompressionPlugin = require("compression-webpack-plugin");
+const { CleanWebpackPlugin } = require("clean-webpack-plugin");
 const helpers = require("./helpers");
 const commonConfig = require("./webpack.common.config");
 const isProduction = process.env.NODE_ENV === "production";
@@ -55,6 +56,7 @@ const prodWebpackConfig = merge(commonConfig, {
         },
     },
     plugins: [
+        new CleanWebpackPlugin(),
         new webpack.EnvironmentPlugin(environment),
         new MiniCSSExtractPlugin({
             filename: "css/[name].[hash].css",

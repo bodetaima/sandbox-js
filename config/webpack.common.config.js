@@ -3,13 +3,13 @@
 const HtmlPlugin = require("html-webpack-plugin");
 const MiniCSSExtractPlugin = require("mini-css-extract-plugin");
 const helpers = require("./helpers");
-const { CleanWebpackPlugin } = require("clean-webpack-plugin");
+
 const isDevelopment = process.env.NODE_ENV === "development";
 
 const commonWebpackConfig = {
     entry: {
         polyfill: "@babel/polyfill",
-        js: helpers.root("src", "js", "index"),
+        main: helpers.root("src", "js", "index"),
     },
     resolve: {
         extensions: [".js"],
@@ -43,20 +43,14 @@ const commonWebpackConfig = {
                             },
                         },
                     },
-                    {
-                        loader: "postcss-loader",
-                        options: {
-                            ident: "postcss",
-                            plugins: [require("tailwindcss"), require("autoprefixer")],
-                        },
-                    },
+                    "postcss-loader",
                 ],
             },
         ],
     },
     plugins: [
-        new CleanWebpackPlugin(),
         new HtmlPlugin({
+            favicon: "./favicon.ico",
             template: "./src/index.html",
             inject: true,
             minify: {
