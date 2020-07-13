@@ -1,17 +1,58 @@
 {
-  "name": "practice",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "live": "nodemon server.js"
-  },
-  "author": "Phong Tran",
-  "license": "ISC",
-  "devDependencies": {
-    "express": "^4.17.1",
-    "nodemon": "^2.0.4"
-  },
-  "dependencies": {}
+    "name": "sandbox",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "dev": "cross-env NODE_ENV=development webpack-dev-server --progress",
+        "staging": "cross-env NODE_ENV=staging webpack",
+        "build": "cross-env NODE_ENV=production webpack --progress"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/bodetaima/sandbox-js.git"
+    },
+    "author": "Phong Tran",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/bodetaima/sandbox-js/issues"
+    },
+    "homepage": "https://github.com/bodetaima/sandbox-js#readme",
+    "dependencies": {
+        "@babel/polyfill": "^7.10.4",
+        "tailwindcss": "^1.4.6"
+    },
+    "devDependencies": {
+        "@babel/core": "^7.10.4",
+        "@babel/plugin-proposal-class-properties": "^7.10.4",
+        "@babel/plugin-proposal-decorators": "^7.10.4",
+        "@babel/plugin-proposal-json-strings": "^7.10.4",
+        "@babel/plugin-syntax-dynamic-import": "^7.8.3",
+        "@babel/plugin-syntax-import-meta": "^7.10.4",
+        "@babel/preset-env": "^7.10.4",
+        "autoprefixer": "^9.8.5",
+        "babel-loader": "^8.1.0",
+        "clean-webpack-plugin": "^3.0.0",
+        "compression-webpack-plugin": "^4.0.0",
+        "cross-env": "^7.0.2",
+        "css-loader": "^3.6.0",
+        "deepmerge": "^4.2.2",
+        "fibers": "^5.0.0",
+        "friendly-errors-webpack-plugin": "^1.7.0",
+        "html-webpack-plugin": "^4.3.0",
+        "mini-css-extract-plugin": "^0.9.0",
+        "node-sass": "^4.14.1",
+        "optimize-css-assets-webpack-plugin": "^5.0.3",
+        "postcss-loader": "^3.0.0",
+        "sass": "^1.26.10",
+        "sass-loader": "^9.0.2",
+        "style-loader": "^1.2.1",
+        "terser-webpack-plugin": "^3.0.6",
+        "webpack": "^4.43.0",
+        "webpack-bundle-analyzer": "^3.8.0",
+        "webpack-cli": "^3.3.12",
+        "webpack-dev-server": "^3.11.0",
+        "webpack-hot-middleware": "^2.25.0",
+        "webpack-merge": "^5.0.8"
+    }
 }
