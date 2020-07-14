@@ -9,7 +9,7 @@ const isDevelopment = process.env.NODE_ENV === "development";
 const commonWebpackConfig = {
     entry: {
         polyfill: "@babel/polyfill",
-        main: helpers.root("src", "js", "index"),
+        index: helpers.root("src", "js", "index"),
     },
     resolve: {
         extensions: [".js"],
@@ -25,7 +25,13 @@ const commonWebpackConfig = {
                 use: [
                     isDevelopment ? "style-loader" : MiniCSSExtractPlugin.loader,
                     { loader: "css-loader", options: { sourceMap: isDevelopment } },
-                    "postcss-loader",
+                    {
+                        loader: "postcss-loader",
+                        options: {
+                            ident: "postcss",
+                            plugins: [require("tailwindcss"), require("autoprefixer")],
+                        },
+                    },
                 ],
             },
             {
@@ -43,7 +49,13 @@ const commonWebpackConfig = {
                             },
                         },
                     },
-                    "postcss-loader",
+                    {
+                        loader: "postcss-loader",
+                        options: {
+                            ident: "postcss",
+                            plugins: [require("tailwindcss"), require("autoprefixer")],
+                        },
+                    },
                 ],
             },
         ],

@@ -1,15 +1,48 @@
 <!DOCTYPE html>
 <html>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <title>Home</title>
+    </head>
 
-<head>
-    <title>Home</title>
-</head>
-
-<body>
-    <div class="container mx-auto my-4">
-        <h1>Welcome to Javascript Sandbox</h1>
-        <p class="mx-auto">A Javascript Sandbox made by and for Phong!</p>
-    </div>
-</body>
-
+    <body>
+        <div class="container mx-auto my-4">
+            <h1>Welcome to Javascript Sandbox</h1>
+            <p class="mx-auto">A Javascript Sandbox made by and for Phong!</p>
+            <table class="table">
+                <thead>
+                    <tr class="px-4 py-2">
+                        <th>Name</th>
+                        <th>Email</th>
+                        <th></th>
+                    </tr>
+                </thead>
+                <tbody id="datatable"></tbody>
+            </table>
+            <input
+                type="text"
+                class="px-4 py-2 mx-auto my-2 border"
+                placeholder="Username..."
+                onkeyup="handleInput(event)"
+                name="name"
+                id="name"
+            />
+            <input
+                type="text"
+                class="px-4 py-2 mx-auto my-2 border"
+                placeholder="Email..."
+                onkeyup="handleInput(event)"
+                name="email"
+                id="email"
+            />
+            <button
+                class="px-4 py-2 text-white bg-blue-500 border rounded hover:bg-white hover:text-blue-500 hover:border-blue-500"
+                onclick="saveNewUser()"
+            >
+                Add User
+            </button>
+        </div>
+    </body>
 </html>
