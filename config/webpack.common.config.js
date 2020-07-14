@@ -29,7 +29,7 @@ const commonWebpackConfig = {
                         loader: "postcss-loader",
                         options: {
                             ident: "postcss",
-                            plugins: [require("tailwindcss"), require("autoprefixer")],
+                            plugins: [require("postcss-import"), require("tailwindcss"), require("autoprefixer")],
                         },
                     },
                 ],
@@ -37,23 +37,28 @@ const commonWebpackConfig = {
             {
                 test: /\.s(c|a)ss$/,
                 use: [
-                    "style-loader",
-                    "css-loader",
+                    isDevelopment ? "style-loader" : MiniCSSExtractPlugin.loader,
                     {
-                        loader: "sass-loader",
+                        loader: "css-loader",
                         options: {
-                            implementation: require("sass"),
-                            sassOptions: {
-                                fiber: require("fibers"),
-                                indentedSyntax: true, // optional
-                            },
+                            sourceMap: isDevelopment,
                         },
                     },
                     {
                         loader: "postcss-loader",
                         options: {
                             ident: "postcss",
-                            plugins: [require("tailwindcss"), require("autoprefixer")],
+                            plugins: [require("postcss-import"), require("tailwindcss"), require("autoprefixer")],
+                        },
+                    },
+                    {
+                        loader: "sass-loader",
+                        options: {
+                            implementation: require("sass"),
+                            sassOptions: {
+                                fiber: require("fibers"),
+                                indentedSyntax: false,
+                            },
                         },
                     },
                 ],

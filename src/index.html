@@ -9,40 +9,30 @@
 
     <body>
         <div class="container mx-auto my-4">
-            <h1>Welcome to Javascript Sandbox</h1>
-            <p class="mx-auto">A Javascript Sandbox made by and for Phong!</p>
-            <table class="table">
-                <thead>
-                    <tr class="px-4 py-2">
-                        <th>Name</th>
-                        <th>Email</th>
-                        <th></th>
-                    </tr>
-                </thead>
-                <tbody id="datatable"></tbody>
-            </table>
-            <input
-                type="text"
-                class="px-4 py-2 mx-auto my-2 border"
-                placeholder="Username..."
-                onkeyup="handleInput(event)"
-                name="name"
-                id="name"
-            />
-            <input
-                type="text"
-                class="px-4 py-2 mx-auto my-2 border"
-                placeholder="Email..."
-                onkeyup="handleInput(event)"
-                name="email"
-                id="email"
-            />
-            <button
-                class="px-4 py-2 text-white bg-blue-500 border rounded hover:bg-white hover:text-blue-500 hover:border-blue-500"
-                onclick="saveNewUser()"
-            >
-                Add User
-            </button>
+            <h1>Welcome to the Sandbox</h1>
+            <p class="mx-auto">A silver's edge Frontend Sandbox!</p>
+            <hr />
+            <p><strong>Buttons</strong></p>
+            <p>Normal</p>
+            <div class="flex">
+                <button class="flex-row w-32 mx-1 btn btn-default">Default</button>
+                <button class="flex-row w-32 mx-1 btn btn-secondary">Secondary</button>
+                <button class="flex-row w-32 mx-1 btn btn-primary">Primary</button>
+                <button class="flex-row w-32 mx-1 btn btn-active">Active</button>
+                <button class="flex-row w-32 mx-1 btn btn-danger">Danger</button>
+                <button class="flex-row w-32 mx-1 btn btn-info">Info</button>
+                <button class="flex-row w-32 mx-1 btn btn-warn">Warning</button>
+            </div>
+            <p>Inverted</p>
+            <div class="flex">
+                <button class="flex-row w-32 mx-1 btn btn-default--inverted">Default</button>
+                <button class="flex-row w-32 mx-1 btn btn-secondary--inverted">Secondary</button>
+                <button class="flex-row w-32 mx-1 btn btn-primary--inverted">Primary</button>
+                <button class="flex-row w-32 mx-1 btn btn-active--inverted">Active</button>
+                <button class="flex-row w-32 mx-1 btn btn-danger--inverted">Danger</button>
+                <button class="flex-row w-32 mx-1 btn btn-info--inverted">Info</button>
+                <button class="flex-row w-32 mx-1 btn btn-warn--inverted">Warning</button>
+            </div>
         </div>
     </body>
 </html>

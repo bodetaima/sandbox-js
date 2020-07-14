@@ -1,0 +1,238 @@
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+
+@import "../../assets/color-pallete/palette.scss";
+
+h1 {
+    font-size: 32px;
+    font-weight: bold;
+}
+
+.bg-gray {
+    background-color: $black-coral;
+}
+
+.text-gray {
+    color: $black-coral;
+}
+
+.border-gray {
+    border-color: $black-coral;
+}
+
+.bg-blue {
+    background-color: $blue-jeans;
+}
+
+.text-blue {
+    color: $blue-jeans;
+}
+
+.border-blue {
+    border-color: $blue-jeans;
+}
+
+.bg-green {
+    background-color: $pistachio;
+}
+
+.text-green {
+    color: $pistachio;
+}
+
+.border-green {
+    border-color: $pistachio;
+}
+
+.bg-red {
+    background-color: $candy-pink;
+}
+
+.text-red {
+    color: $candy-pink;
+}
+
+.border-red {
+    border-color: $candy-pink;
+}
+
+.bg-black-custom {
+    background-color: $raisin-black;
+}
+
+.text-black-custom {
+    color: $raisin-black;
+}
+
+.border-black-custom {
+    border-color: $raisin-black;
+}
+
+.bg-cyan {
+    background-color: $maximum-blue-green;
+}
+
+.text-cyan {
+    color: $maximum-blue-green;
+}
+
+.border-cyan {
+    border-color: $maximum-blue-green;
+}
+
+.bg-orange {
+    background-color: $tan-crayola;
+}
+
+.text-orange {
+    color: $tan-crayola;
+}
+
+.border-orange {
+    border-color: $tan-crayola;
+}
+
+.btn {
+    @apply px-4 py-2 border rounded;
+}
+
+.btn-default {
+    @apply bg-gray text-white;
+    &:hover {
+        @apply text-gray bg-white border-gray;
+    }
+    &:active {
+        @apply bg-gray text-white;
+    }
+}
+
+.btn-default--inverted {
+    @apply bg-white text-gray border-gray;
+    &:hover {
+        @apply bg-gray text-white;
+    }
+    &:active {
+        @apply bg-white text-gray border-gray;
+    }
+}
+
+.btn-primary {
+    @apply bg-blue text-white;
+    &:hover {
+        @apply text-blue bg-white border-blue;
+    }
+    &:active {
+        @apply bg-blue text-white;
+    }
+}
+
+.btn-primary--inverted {
+    @apply bg-white text-blue border-blue;
+    &:hover {
+        @apply bg-blue text-white;
+    }
+    &:active {
+        @apply bg-white text-blue border-blue;
+    }
+}
+
+.btn-active {
+    @apply bg-green text-white;
+    &:hover {
+        @apply text-green bg-white border-green;
+    }
+    &:active {
+        @apply bg-green text-white;
+    }
+}
+
+.btn-active--inverted {
+    @apply bg-white text-green border-green;
+    &:hover {
+        @apply bg-green text-white;
+    }
+    &:active {
+        @apply bg-white text-green border-green;
+    }
+}
+
+.btn-danger {
+    @apply bg-red text-white;
+    &:hover {
+        @apply text-red bg-white border-red;
+    }
+    &:active {
+        @apply bg-red text-white;
+    }
+}
+
+.btn-danger--inverted {
+    @apply bg-white text-red border-red;
+    &:hover {
+        @apply bg-red text-white;
+    }
+    &:active {
+        @apply bg-white text-red border-red;
+    }
+}
+
+.btn-secondary {
+    @apply bg-black-custom text-white;
+    &:hover {
+        @apply text-black-custom bg-white border-black-custom;
+    }
+    &:active {
+        @apply bg-black-custom text-white;
+    }
+}
+
+.btn-secondary--inverted {
+    @apply bg-white text-black-custom border-black-custom;
+    &:hover {
+        @apply bg-black-custom text-white;
+    }
+    &:active {
+        @apply bg-white text-black-custom border-black-custom;
+    }
+}
+
+.btn-info {
+    @apply bg-cyan text-white;
+    &:hover {
+        @apply text-cyan bg-white border-cyan;
+    }
+    &:active {
+        @apply bg-cyan text-white;
+    }
+}
+
+.btn-info--inverted {
+    @apply bg-white text-cyan border-cyan;
+    &:hover {
+        @apply bg-cyan text-white;
+    }
+    &:active {
+        @apply bg-white text-cyan border-cyan;
+    }
+}
+
+.btn-warn {
+    @apply bg-orange text-white;
+    &:hover {
+        @apply text-orange bg-white border-orange;
+    }
+    &:active {
+        @apply bg-orange text-white;
+    }
+}
+
+.btn-warn--inverted {
+    @apply bg-white text-orange border-orange;
+    &:hover {
+        @apply bg-orange text-white;
+    }
+    &:active {
+        @apply bg-white text-orange border-orange;
+    }
+}
