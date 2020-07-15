@@ -94,145 +94,211 @@ h1 {
 }
 
 .btn {
-    @apply px-4 py-2 border rounded;
+    @apply px-4;
+    @apply py-2;
+    @apply border;
+    @apply rounded;
 }
 
 .btn-default {
-    @apply bg-gray text-white;
+    @apply bg-gray;
+    @apply text-white;
     &:hover {
-        @apply text-gray bg-white border-gray;
+        @apply text-gray;
+        @apply bg-white;
+        @apply border-gray;
     }
     &:active {
-        @apply bg-gray text-white;
+        @apply bg-gray;
+        @apply text-white;
     }
 }
 
 .btn-default--inverted {
-    @apply bg-white text-gray border-gray;
+    @apply bg-white; 
+    @apply text-gray;
+    @apply border-gray;
     &:hover {
-        @apply bg-gray text-white;
+        @apply bg-gray;
+        @apply text-white;
     }
     &:active {
-        @apply bg-white text-gray border-gray;
-    }
-}
-
-.btn-primary {
-    @apply bg-blue text-white;
-    &:hover {
-        @apply text-blue bg-white border-blue;
-    }
-    &:active {
-        @apply bg-blue text-white;
-    }
-}
-
-.btn-primary--inverted {
-    @apply bg-white text-blue border-blue;
-    &:hover {
-        @apply bg-blue text-white;
-    }
-    &:active {
-        @apply bg-white text-blue border-blue;
-    }
-}
-
-.btn-active {
-    @apply bg-green text-white;
-    &:hover {
-        @apply text-green bg-white border-green;
-    }
-    &:active {
-        @apply bg-green text-white;
-    }
-}
-
-.btn-active--inverted {
-    @apply bg-white text-green border-green;
-    &:hover {
-        @apply bg-green text-white;
-    }
-    &:active {
-        @apply bg-white text-green border-green;
-    }
-}
-
-.btn-danger {
-    @apply bg-red text-white;
-    &:hover {
-        @apply text-red bg-white border-red;
-    }
-    &:active {
-        @apply bg-red text-white;
-    }
-}
-
-.btn-danger--inverted {
-    @apply bg-white text-red border-red;
-    &:hover {
-        @apply bg-red text-white;
-    }
-    &:active {
-        @apply bg-white text-red border-red;
+        @apply bg-white;
+        @apply text-gray;
+        @apply border-gray;
     }
 }
 
 .btn-secondary {
-    @apply bg-black-custom text-white;
+    @apply bg-black-custom;
+    @apply text-white;
     &:hover {
-        @apply text-black-custom bg-white border-black-custom;
+        @apply text-black-custom;
+        @apply bg-white;
+        @apply border-black-custom;
     }
     &:active {
-        @apply bg-black-custom text-white;
+        @apply bg-black-custom;
+        @apply text-white;
     }
 }
 
 .btn-secondary--inverted {
-    @apply bg-white text-black-custom border-black-custom;
+    @apply bg-white;
+    @apply text-black-custom;
+    @apply border-black-custom;
     &:hover {
-        @apply bg-black-custom text-white;
+        @apply bg-black-custom;
+        @apply text-white;
     }
     &:active {
-        @apply bg-white text-black-custom border-black-custom;
+        @apply bg-white;
+        @apply text-black-custom;
+        @apply border-black-custom;
+    }
+}
+
+.btn-primary {
+    @apply bg-blue;
+    @apply text-white;
+    &:hover {
+        @apply text-blue;
+        @apply bg-white;
+        @apply border-blue;
+    }
+    &:active {
+        @apply bg-blue;
+        @apply text-white;
+    }
+}
+
+.btn-primary--inverted {
+    @apply bg-white;
+    @apply text-blue;
+    @apply border-blue;
+    &:hover {
+        @apply bg-blue;
+        @apply text-white;
+    }
+    &:active {
+        @apply bg-white;
+        @apply text-blue;
+        @apply border-blue;
+    }
+}
+
+.btn-active {
+    @apply bg-green;
+    @apply text-white;
+    &:hover {
+        @apply text-green;
+        @apply bg-white;
+        @apply border-green;
+    }
+    &:active {
+        @apply bg-green;
+        @apply text-white;
+    }
+}
+
+.btn-active--inverted {
+    @apply bg-white;
+    @apply text-green;
+    @apply border-green;
+    &:hover {
+        @apply bg-green;
+        @apply text-white;
+    }
+    &:active {
+        @apply bg-white;
+        @apply text-green;
+        @apply border-green;
+    }
+}
+
+.btn-danger {
+    @apply bg-red;
+    @apply text-white;
+    &:hover {
+        @apply text-red;
+        @apply bg-white;
+        @apply border-red;
+    }
+    &:active {
+        @apply bg-red;
+        @apply text-white;
+    }
+}
+
+.btn-danger--inverted {
+    @apply bg-white;
+    @apply text-red;
+    @apply border-red;
+    &:hover {
+        @apply bg-red;
+        @apply text-white;
+    }
+    &:active {
+        @apply bg-white;
+        @apply text-red;
+        @apply border-red;
     }
 }
 
 .btn-info {
-    @apply bg-cyan text-white;
+    @apply bg-cyan;
+    @apply text-white;
     &:hover {
-        @apply text-cyan bg-white border-cyan;
+        @apply text-cyan;
+        @apply bg-white;
+        @apply border-cyan;
     }
     &:active {
-        @apply bg-cyan text-white;
+        @apply bg-cyan;
+        @apply text-white;
     }
 }
 
 .btn-info--inverted {
-    @apply bg-white text-cyan border-cyan;
+    @apply bg-white;
+    @apply text-cyan;
+    @apply border-cyan;
     &:hover {
-        @apply bg-cyan text-white;
+        @apply bg-cyan;
+        @apply text-white;
     }
     &:active {
-        @apply bg-white text-cyan border-cyan;
+        @apply bg-white;
+        @apply text-cyan;
+        @apply border-cyan;
     }
 }
 
 .btn-warn {
-    @apply bg-orange text-white;
+    @apply bg-orange;
+    @apply text-white;
     &:hover {
-        @apply text-orange bg-white border-orange;
+        @apply text-orange;
+        @apply bg-white;
+        @apply border-orange;
     }
     &:active {
-        @apply bg-orange text-white;
+        @apply bg-orange;
+        @apply text-white;
     }
 }
 
 .btn-warn--inverted {
-    @apply bg-white text-orange border-orange;
+    @apply bg-white;
+    @apply text-orange;
+    @apply border-orange;
     &:hover {
-        @apply bg-orange text-white;
+        @apply bg-orange;
+        @apply text-white;
     }
     &:active {
-        @apply bg-white text-orange border-orange;
+        @apply bg-white;
+        @apply text-orange;
+        @apply border-orange;
     }
 }

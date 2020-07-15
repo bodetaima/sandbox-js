@@ -23,7 +23,8 @@ const commonWebpackConfig = {
             {
                 test: /\.css$/,
                 use: [
-                    isDevelopment ? "style-loader" : MiniCSSExtractPlugin.loader,
+                    "style-loader",
+                    MiniCSSExtractPlugin.loader,
                     { loader: "css-loader", options: { sourceMap: isDevelopment } },
                     {
                         loader: "postcss-loader",
@@ -37,7 +38,8 @@ const commonWebpackConfig = {
             {
                 test: /\.s(c|a)ss$/,
                 use: [
-                    isDevelopment ? "style-loader" : MiniCSSExtractPlugin.loader,
+                    "style-loader",
+                    MiniCSSExtractPlugin.loader,
                     {
                         loader: "css-loader",
                         options: {
