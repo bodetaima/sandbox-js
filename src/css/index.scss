@@ -96,7 +96,7 @@ h1 {
 .btn {
     @apply px-4;
     @apply py-2;
-    @apply border;
+    @apply border-2;
     @apply rounded;
 }
 
@@ -129,6 +129,20 @@ h1 {
     }
 }
 
+.btn-default--neutral {
+    @apply bg-white; 
+    @apply text-gray-500;
+    @apply border-gray-500;
+    &:hover {
+        @apply text-gray;
+        @apply border-gray;
+    }
+    &:active {
+        @apply bg-gray;
+        @apply text-white;
+    }
+}
+
 .btn-secondary {
     @apply bg-black-custom;
     @apply text-white;
@@ -155,6 +169,20 @@ h1 {
         @apply bg-white;
         @apply text-black-custom;
         @apply border-black-custom;
+    }
+}
+
+.btn-secondary--neutral {
+    @apply bg-white; 
+    @apply text-gray-500;
+    @apply border-gray-500;
+    &:hover {
+        @apply text-black-custom;
+        @apply border-black-custom;
+    }
+    &:active {
+        @apply bg-black-custom;
+        @apply text-white;
     }
 }
 
@@ -187,6 +215,20 @@ h1 {
     }
 }
 
+.btn-primary--neutral {
+    @apply bg-white; 
+    @apply text-gray-500;
+    @apply border-gray-500;
+    &:hover {
+        @apply text-blue;
+        @apply border-blue;
+    }
+    &:active {
+        @apply bg-blue;
+        @apply text-white;
+    }
+}
+
 .btn-active {
     @apply bg-green;
     @apply text-white;
@@ -213,6 +255,20 @@ h1 {
         @apply bg-white;
         @apply text-green;
         @apply border-green;
+    }
+}
+
+.btn-active--neutral {
+    @apply bg-white; 
+    @apply text-gray-500;
+    @apply border-gray-500;
+    &:hover {
+        @apply text-green;
+        @apply border-green;
+    }
+    &:active {
+        @apply bg-green;
+        @apply text-white;
     }
 }
 
@@ -245,6 +301,20 @@ h1 {
     }
 }
 
+.btn-danger--neutral {
+    @apply bg-white; 
+    @apply text-gray-500;
+    @apply border-gray-500;
+    &:hover {
+        @apply text-red;
+        @apply border-red;
+    }
+    &:active {
+        @apply bg-red;
+        @apply text-white;
+    }
+}
+
 .btn-info {
     @apply bg-cyan;
     @apply text-white;
@@ -274,6 +344,20 @@ h1 {
     }
 }
 
+.btn-info--neutral {
+    @apply bg-white; 
+    @apply text-gray-500;
+    @apply border-gray-500;
+    &:hover {
+        @apply text-cyan;
+        @apply border-cyan;
+    }
+    &:active {
+        @apply bg-cyan;
+        @apply text-white;
+    }
+}
+
 .btn-warn {
     @apply bg-orange;
     @apply text-white;
@@ -300,5 +384,19 @@ h1 {
         @apply bg-white;
         @apply text-orange;
         @apply border-orange;
+    }
+}
+
+.btn-warn--neutral {
+    @apply bg-white; 
+    @apply text-gray-500;
+    @apply border-gray-500;
+    &:hover {
+        @apply text-orange;
+        @apply border-orange;
+    }
+    &:active {
+        @apply bg-orange;
+        @apply text-white;
     }
 }

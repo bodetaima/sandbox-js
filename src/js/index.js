@@ -25,6 +25,16 @@ let template = `<div class="container mx-auto my-4">
     <button class="flex-row w-32 mx-1 btn btn-info--inverted">Info</button>
     <button class="flex-row w-32 mx-1 btn btn-warn--inverted">Warning</button>
 </div>
+<p>Neutral</p>
+<div class="flex">
+    <button class="flex-row w-32 mx-1 btn btn-default--neutral">Default</button>
+    <button class="flex-row w-32 mx-1 btn btn-secondary--neutral">Secondary</button>
+    <button class="flex-row w-32 mx-1 btn btn-primary--neutral">Primary</button>
+    <button class="flex-row w-32 mx-1 btn btn-active--neutral">Active</button>
+    <button class="flex-row w-32 mx-1 btn btn-danger--neutral">Danger</button>
+    <button class="flex-row w-32 mx-1 btn btn-info--neutral">Info</button>
+    <button class="flex-row w-32 mx-1 btn btn-warn--neutral">Warning</button>
+</div>
 </div>`;
 
 document.addEventListener("DOMContentLoaded", () => {
