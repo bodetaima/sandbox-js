@@ -1,43 +1,12 @@
-import "../css/index.scss";
+import '../css/index.css';
 
-let template = `<div class="container mx-auto my-4">
-<h1>Welcome to the Sandbox</h1>
-<p class="mx-auto">A silver's edge Frontend Sandbox!</p>
-<hr />
-<p><strong>Buttons</strong></p>
-<p>Normal</p>
-<div class="flex">
-    <button class="flex-row w-32 mx-1 btn btn-default">Default</button>
-    <button class="flex-row w-32 mx-1 btn btn-secondary">Secondary</button>
-    <button class="flex-row w-32 mx-1 btn btn-primary">Primary</button>
-    <button class="flex-row w-32 mx-1 btn btn-active">Active</button>
-    <button class="flex-row w-32 mx-1 btn btn-danger">Danger</button>
-    <button class="flex-row w-32 mx-1 btn btn-info">Info</button>
-    <button class="flex-row w-32 mx-1 btn btn-warn">Warning</button>
-</div>
-<p>Inverted</p>
-<div class="flex">
-    <button class="flex-row w-32 mx-1 btn btn-default--inverted">Default</button>
-    <button class="flex-row w-32 mx-1 btn btn-secondary--inverted">Secondary</button>
-    <button class="flex-row w-32 mx-1 btn btn-primary--inverted">Primary</button>
-    <button class="flex-row w-32 mx-1 btn btn-active--inverted">Active</button>
-    <button class="flex-row w-32 mx-1 btn btn-danger--inverted">Danger</button>
-    <button class="flex-row w-32 mx-1 btn btn-info--inverted">Info</button>
-    <button class="flex-row w-32 mx-1 btn btn-warn--inverted">Warning</button>
-</div>
-<p>Neutral</p>
-<div class="flex">
-    <button class="flex-row w-32 mx-1 btn btn-default--neutral">Default</button>
-    <button class="flex-row w-32 mx-1 btn btn-secondary--neutral">Secondary</button>
-    <button class="flex-row w-32 mx-1 btn btn-primary--neutral">Primary</button>
-    <button class="flex-row w-32 mx-1 btn btn-active--neutral">Active</button>
-    <button class="flex-row w-32 mx-1 btn btn-danger--neutral">Danger</button>
-    <button class="flex-row w-32 mx-1 btn btn-info--neutral">Info</button>
-    <button class="flex-row w-32 mx-1 btn btn-warn--neutral">Warning</button>
-</div>
-</div>`;
+function openNavBar() {
+  var x = document.getElementById('nav-items');
+  if (x.className === 'nav-menu') {
+    x.className += ' responsive';
+  } else {
+    x.className = 'nav-menu';
+  }
+}
 
-document.addEventListener("DOMContentLoaded", () => {
-    document.getElementById("app").insertAdjacentHTML("beforeend", template);
-});
-
+window.openNavBar = openNavBar;
