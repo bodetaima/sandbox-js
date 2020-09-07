@@ -20,8 +20,7 @@ body {
     #7f7fd5
   ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   margin: auto;
-  font-family: 'Comfortaa', cursive;
-  font-size: 24px;
+  font-family: 'Roboto', sans-serif;
 }
 
 .navigation {
@@ -54,8 +53,7 @@ body {
       #7f7fd5
     ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     margin: auto;
-    font-family: 'Comfortaa', cursive;
-    font-size: 24px;
+    font-family: 'Roboto', sans-serif;
   }
 
   .navigation {
@@ -145,10 +143,10 @@ body {
   .icon {
     position: absolute;
     right: 20px;
-    top: 8px;
+    top: 15px;
   }
   .nav-menu.responsive a {
-    float: none;
+    float: center;
     display: block;
     text-align: left;
   }
@@ -157,4 +155,26 @@ body {
     float: none;
     display: block;
   }
+}
+
+.custom-shape-divider-bottom-1599502530 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    z-index: -1;
+}
+
+.custom-shape-divider-bottom-1599502530 svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 200px;
+    transform: rotateY(180deg);
+}
+
+.custom-shape-divider-bottom-1599502530 .shape-fill {
+    fill: #85A6E6;
 }
