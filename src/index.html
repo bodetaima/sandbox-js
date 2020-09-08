@@ -1,19 +1,25 @@
 <!DOCTYPE html>
-<html>
+<html lang="en-US">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta
+      name="description"
+      content="With boilerplate Webpack 4 configuration, hand-picked optimize loaders and plugins. Superpowers bring you the mighty but always ease of use."
+    />
     <title>
       Powerful Webpack 4 boilerplate with minimal configurations | Superpowers
     </title>
     <link
-      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Kumbh+Sans&display=swap"
       rel="stylesheet"
     />
     <link
       rel="stylesheet"
-      href="../assets/font-awesome-4.7.0/css/font-awesome.min.css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+      integrity="sha512-SfTiTlX6kk+qitfevl/7LibUOeJWlt9rbyDn92a1DqWOw9vWG2MFoays0sgObmWazO5BQPiFucnnEAjpAB+/Sw=="
+      crossorigin="anonymous"
     />
   </head>
   <body>
@@ -45,8 +51,7 @@
         <nav class="navigation">
           <div class="flex flex-wrap justify-between">
             <span id="nav-heading" class="px-2 text-2xl text-black"
-              ><i class="fa fa-superpowers" aria-hidden="true"></i>
-              Superpowers</span
+              ><i class="fa fa-superpowers" aria-hidden="true"></i> Superpowers</span
             >
             <input
               type="text"
@@ -72,42 +77,43 @@
         <!--end of navigation-->
       </header>
       <!--end of header-->
-      <div id="content" class="xl:m-0 grid xl:table xl:my-20">
-        <img
-          class="block w-10/12 m-auto lg:w-1/3 xl:hidden"
-          src="../assets/images/webpack-illustration-2.png"
-          alt="webpack-illustration-1"
-        />
-        <div
-          class="w-auto mx-20 my-4 text-center xl:text-left xl:table-cell xl:align-middle"
-        >
-          <p class="hidden text-6xl opacity-50 xl:block">SUPERPOWERS</p>
-          <p class="text-2xl font-semibold xl:text-4xl">
-            Powerful Webpack boilerplate.
-          </p>
-          <p>
-            With boilerplate Webpack 4 configuration, hand-picked optimize
-            loaders and plugins. <b>Superpowers</b> bring you the mighty but
-            always ease of use.
-          </p>
-          <button
-            class="px-10 py-4 my-1 bg-blue-400 rounded-full hover:shadow-xl duration-700 focus:outline-none"
-          >
-            Get Started
-          </button>
-          <button
-            class="px-10 py-4 my-1 bg-white rounded-full hover:shadow-xl duration-700 focus:outline-none"
-          >
-            Documentations
-          </button>
-        </div>
-        <div class="hidden w-auto xl:table-cell xl:align-middle">
+      <div id="content">
+        <div class="xl:m-0 grid xl:table xl:my-20">
           <img
-            src="../assets/images/webpack-illustration-2.png"
+            class="block w-10/12 m-auto md:w-1/3 lg:w-1/3 xl:hidden webpack-illustrator-1"
+            id="sm-heading-image"
             alt="webpack-illustration-1"
           />
+          <div
+            class="w-auto mx-20 my-4 text-center xl:text-left xl:table-cell xl:align-middle heading-1"
+          >
+            <p class="hidden text-6xl font-bold opacity-50 xl:block">SUPERPOWERS</p>
+            <p class="text-xl font-semibold xl:text-4xl">
+              Powerful Webpack boilerplate.
+            </p>
+            <p class="text-lg">
+              With boilerplate Webpack 4 configuration, hand-picked optimize loaders and plugins.
+              <b>Superpowers</b> bring you the mighty but always ease of use.
+            </p>
+            <button
+              id="get-started-button"
+              class="hidden px-10 py-4 my-1 bg-blue-400 rounded-full hover:shadow-xl duration-700 focus:outline-none heading-button"
+            >
+              Get Started
+            </button>
+            <button
+              id="docs-button"
+              class="hidden px-10 py-4 my-1 bg-white rounded-full hover:shadow-xl duration-700 focus:outline-none heading-button-delay"
+            >
+              Documentations
+            </button>
+          </div>
+          <div class="hidden w-auto xl:table-cell xl:align-middle webpack-illustrator-1">
+            <img id="lg-heading-image" alt="webpack-illustration-1" />
+          </div>
         </div>
       </div>
+      <!--end of content-->
     </div>
     <!--end of container-->
   </body>
